@@ -1,6 +1,22 @@
 # CNN Sentiment Analysis Model
 ## End-to-end Training and Deployment on AWS (Amazon Web Service)
 
+<br>
+
+The model is deployed on AWS API Gateway. 
+
+https://yggy8xxbo4.execute-api.us-east-1.amazonaws.com/v1/predict
+
+With any tweet sentence input, it will output the overall sentiment of the sentence.
+
+For example:
+
+input: {"tweet" : "No one knows python better than me."}
+
+output: {"Sentiment": "positive"}
+
+<br>
+
 ***raw-data.zip***: unprocessed data, split into three subsets
 
 Link to the raw dataset on the S3: https://aiops-2020-public.s3.us-east-2.amazonaws.com/training.full.csv
@@ -46,19 +62,5 @@ Link to the raw dataset on the S3: https://aiops-2020-public.s3.us-east-2.amazon
 
 ***model-saved***: the final version of the trained model
 
-<br>
 
-The model is deployed on AWS API Gateway. 
-
-https://yggy8xxbo4.execute-api.us-east-1.amazonaws.com/v1/predict
-
-With any tweet sentence input, it will output the overall sentiment of the sentence.
-
-For example:
-
-input: {"tweet" : "No one knows python better than me."}
-
-output: {"Sentiment": "positive"}
-
-<br>
 
