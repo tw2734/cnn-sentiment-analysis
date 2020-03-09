@@ -1,5 +1,5 @@
 # CNN Sentiment Analysis Model
-## End-to-end Training and Deployment on the AWS
+## End-to-end Training and Deployment on AWS (Amazon Web Service)
 
 ***raw-data.zip***: unprocessed data, split into three subsets
 
@@ -32,7 +32,7 @@ Link to the raw dataset on the S3: https://aiops-2020-public.s3.us-east-2.amazon
 
 <br>
 
-***sagemaker_jupyter_code.ipynb***: jupyter notebook used to train model on the SageMaker
+***sagemaker_jupyter_code.ipynb***: jupyter notebook used to train model on AWS SageMaker Notebook
 
 <br>
 
@@ -48,17 +48,17 @@ Link to the raw dataset on the S3: https://aiops-2020-public.s3.us-east-2.amazon
 
 <br>
 
+The model is deployed on AWS API Gateway. 
 
-Link to the GloVe dictionary (25d) on the S3: https://e4577-cloud.s3.amazonaws.com/dictionary/glove.txt 
+https://yggy8xxbo4.execute-api.us-east-1.amazonaws.com/v1/predict
 
-Link to the GloVe dictionary (50d) on the S3: https://e4577-cloud.s3.amazonaws.com/dictionary/glove.50d.txt 
+With any tweet sentence input, it will output the overall sentiment of the sentence.
 
-Link to the GloVe dictionary (200d) on the S3: https://e4577-cloud.s3.amazonaws.com/dictionary/glove.200d.txt 
+For example:
+
+input: {"tweet" : "No one knows python better than me."}
+
+output: {"Sentiment": "positive"}
 
 <br>
 
-### Reference
-
-Under the instruction of Professor Pierre-Hadrien Arnoux @ Columbia University
-
-Twitter GloVe embedding dictionary from https://github.com/stanfordnlp/GloVe
